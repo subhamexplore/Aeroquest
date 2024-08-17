@@ -1,0 +1,41 @@
+
+.form-left input {
+  width: 100%;
+  height: 50px;
+  margin: 10px 0;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  outline: none;
+  padding: 0 20px;
+  font-size: 0.9rem;
+}
+.form-left input::placeholder {
+  color: rgba(0, 73, 105, 0.7);
+}
+.form-left select {
+  width: 100%;
+  height: 50px;
+  margin: 10px 0;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  outline: none;
+  padding: 0 20px;
+  font-size: 0.9rem;
+  color: rgba(0, 73, 105, 0.7);
+}
+.form-right textarea {
+  width: 100%;
+  margin-top: 10px;
+  height: 92.5%;
+  padding: 20px;
+  font-size: 0.9rem;
+  color: rgba(0, 73, 105, 0.7);
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  outline: none;
+}
+.form-right textarea::placeholder {
+    color: rgba(0, 73, 105, 0.7);
+}
+@media(max-width:768px){
+    .nav-contact-btn{
+        margin-top: 40px;
+    }
+}

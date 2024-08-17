@@ -1,0 +1,45 @@
+.cards-three-2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 30px 10px 30px;
+  height: auto;
+  background-color: white;
+}
+.point-logo {
+  height: 30px;
+  width: 30px;
+  background-color: rgba(0, 73, 105, 1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+.point-logo:hover {
+  background-color: rgba(0, 73, 105, 0.8);
+}
+.points-ind {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.all-points {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px 40px;
+  padding-bottom: 30px;
+}
+@media(max-width:430px){
+    #caro-box{
+        transform: scale(0.8);
+    }
+}
+@media(max-width:400px){
+    #caro-box{
+        margin-left: -50px;
+    }
+}
