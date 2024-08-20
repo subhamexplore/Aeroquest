@@ -2,8 +2,9 @@ import React from "react";
 import contact from "../assets/images/industries.png";
 import "../assets/styles/Industries.css";
 import a1 from "../assets/images/i1.png";
-import a2 from "../assets/images/a2.png";
-import a3 from "../assets/images/a3.png";
+import a2 from "../assets/images/i2.png";
+import a3 from "../assets/images/i3.png";
+import a4 from "../assets/images/i4.png";
 import { MdArrowForwardIos } from "react-icons/md";
 
 const Industries = () => {
@@ -80,8 +81,8 @@ const Industries = () => {
         <br />
         <br />
         <br />
-        <div className="row" style={{ margin: "0", gap:"20px"}}>
-          <div className="cards-three-2 col-lg-5">
+        <div className="row" style={{ margin: "0", gap:"0px"}}>
+          <div className="cards-three-2 col-lg-6">
             <div>
               <div className="logo-top mb-3">
                 <div>
@@ -123,14 +124,14 @@ const Industries = () => {
               </div>
             </div>
           </div>
-          <div className="cards-three-2 col-lg-5">
+          <div className="cards-three-2 col-lg-6">
             <div>
               <div className="logo-top mb-3">
                 <div>
-                  <img className="mb-3" src={a1} alt="" height={40} />
+                  <img className="mb-3" src={a2} alt="" height={40} />
                 </div>
                 <div>
-                  <h6 style={{ color: "rgba(0, 73, 105, 1)" }}>Agriculture</h6>
+                  <h6 style={{ color: "rgba(0, 73, 105, 1)" }}>Energy</h6>
                 </div>
               </div>
               <p
@@ -140,39 +141,36 @@ const Industries = () => {
                   color: "rgba(0, 0, 0, 0.5)",
                 }}
               >
-                For farming, our drone surveys offer greater cost-effectiveness
-                and accuracy than traditional inspections. Whether that’s
-                monitoring crop health or assessing stand counts, we offer a
-                viable alternative to lengthy walks and tractor trips.
+                From renewable energy providers to gas and electric companies, our drone surveys and inspections deliver trusted safety, accuracy, and efficiency. Through advanced aerial imaging, we play a vital role in decisions that minimize the downtime of your equipment.
               </p>
               <div className="all-points">
                 <div className="points-ind">
                     <div className="point-logo"><MdArrowForwardIos/></div>
-                    <div className="point-text" style={{fontSize:'0.9rem', color:"rgba(0, 73, 105, 1)", fontWeight:"600"}}>Crop health</div>
+                    <div className="point-text" style={{fontSize:'0.9rem', color:"rgba(0, 73, 105, 1)", fontWeight:"600"}}> Wind turbines</div>
                 </div>
                 <div className="points-ind">
                     <div className="point-logo"><MdArrowForwardIos/></div>
-                    <div className="point-text" style={{fontSize:'0.9rem', color:"rgba(0, 73, 105, 1)", fontWeight:"600"}}>Silos & barns</div>
+                    <div className="point-text" style={{fontSize:'0.9rem', color:"rgba(0, 73, 105, 1)", fontWeight:"600"}}>Solar panels</div>
                 </div>
                 <div className="points-ind">
                     <div className="point-logo"><MdArrowForwardIos/></div>
-                    <div className="point-text" style={{fontSize:'0.9rem', color:"rgba(0, 73, 105, 1)", fontWeight:"600"}}> Irrigation systems</div>
+                    <div className="point-text" style={{fontSize:'0.9rem', color:"rgba(0, 73, 105, 1)", fontWeight:"600"}}> Power lines</div>
                 </div>
                 <div className="points-ind">
                     <div className="point-logo"><MdArrowForwardIos/></div>
-                    <div className="point-text" style={{fontSize:'0.9rem', color:"rgba(0, 73, 105, 1)", fontWeight:"600"}}>Greenhouses</div>
+                    <div className="point-text" style={{fontSize:'0.9rem', color:"rgba(0, 73, 105, 1)", fontWeight:"600"}}>Substations</div>
                 </div>
               </div>
             </div>
           </div>
-          <div className="cards-three-2 col-lg-5">
+          <div className="cards-three-2 col-lg-6">
             <div>
               <div className="logo-top mb-3">
                 <div>
-                  <img className="mb-3" src={a1} alt="" height={40} />
+                  <img className="mb-3" src={a3} alt="" height={40} />
                 </div>
                 <div>
-                  <h6 style={{ color: "rgba(0, 73, 105, 1)" }}>Agriculture</h6>
+                  <h6 style={{ color: "rgba(0, 73, 105, 1)" }}>Telecom</h6>
                 </div>
               </div>
               <p
@@ -182,39 +180,36 @@ const Industries = () => {
                   color: "rgba(0, 0, 0, 0.5)",
                 }}
               >
-                For farming, our drone surveys offer greater cost-effectiveness
-                and accuracy than traditional inspections. Whether that’s
-                monitoring crop health or assessing stand counts, we offer a
-                viable alternative to lengthy walks and tractor trips.
+                Within the telecommunications space, our drone services keep workers safe from hazardous climbs while offering an up-close look at the vital cables, antennas, and sensors your networks depend on to operate smoothly.
               </p>
               <div className="all-points">
                 <div className="points-ind">
                     <div className="point-logo"><MdArrowForwardIos/></div>
-                    <div className="point-text" style={{fontSize:'0.9rem', color:"rgba(0, 73, 105, 1)", fontWeight:"600"}}>Crop health</div>
+                    <div className="point-text" style={{fontSize:'0.9rem', color:"rgba(0, 73, 105, 1)", fontWeight:"600"}}>Cell towers</div>
                 </div>
                 <div className="points-ind">
                     <div className="point-logo"><MdArrowForwardIos/></div>
-                    <div className="point-text" style={{fontSize:'0.9rem', color:"rgba(0, 73, 105, 1)", fontWeight:"600"}}>Silos & barns</div>
+                    <div className="point-text" style={{fontSize:'0.9rem', color:"rgba(0, 73, 105, 1)", fontWeight:"600"}}>Antenna systems</div>
                 </div>
                 <div className="points-ind">
                     <div className="point-logo"><MdArrowForwardIos/></div>
-                    <div className="point-text" style={{fontSize:'0.9rem', color:"rgba(0, 73, 105, 1)", fontWeight:"600"}}> Irrigation systems</div>
+                    <div className="point-text" style={{fontSize:'0.9rem', color:"rgba(0, 73, 105, 1)", fontWeight:"600"}}> Communication cables</div>
                 </div>
                 <div className="points-ind">
                     <div className="point-logo"><MdArrowForwardIos/></div>
-                    <div className="point-text" style={{fontSize:'0.9rem', color:"rgba(0, 73, 105, 1)", fontWeight:"600"}}>Greenhouses</div>
+                    <div className="point-text" style={{fontSize:'0.9rem', color:"rgba(0, 73, 105, 1)", fontWeight:"600"}}>Base stations</div>
                 </div>
               </div>
             </div>
           </div>
-          <div className="cards-three-2 col-lg-5">
+          <div className="cards-three-2 col-lg-6">
             <div>
               <div className="logo-top mb-3">
                 <div>
-                  <img className="mb-3" src={a1} alt="" height={40} />
+                  <img className="mb-3" src={a4} alt="" height={40} />
                 </div>
                 <div>
-                  <h6 style={{ color: "rgba(0, 73, 105, 1)" }}>Agriculture</h6>
+                  <h6 style={{ color: "rgba(0, 73, 105, 1)" }}>Infrastructure</h6>
                 </div>
               </div>
               <p
@@ -224,27 +219,24 @@ const Industries = () => {
                   color: "rgba(0, 0, 0, 0.5)",
                 }}
               >
-                For farming, our drone surveys offer greater cost-effectiveness
-                and accuracy than traditional inspections. Whether that’s
-                monitoring crop health or assessing stand counts, we offer a
-                viable alternative to lengthy walks and tractor trips.
+                For major infrastructure, our drone surveys and inspections are a proactive way to ensure the continued integrity of public and private sector structures alike. In turn, we help decision-makers prevent costly repairs while maintaining operations.
               </p>
               <div className="all-points">
                 <div className="points-ind">
                     <div className="point-logo"><MdArrowForwardIos/></div>
-                    <div className="point-text" style={{fontSize:'0.9rem', color:"rgba(0, 73, 105, 1)", fontWeight:"600"}}>Crop health</div>
+                    <div className="point-text" style={{fontSize:'0.9rem', color:"rgba(0, 73, 105, 1)", fontWeight:"600"}}>Bridges & roads</div>
                 </div>
                 <div className="points-ind">
                     <div className="point-logo"><MdArrowForwardIos/></div>
-                    <div className="point-text" style={{fontSize:'0.9rem', color:"rgba(0, 73, 105, 1)", fontWeight:"600"}}>Silos & barns</div>
+                    <div className="point-text" style={{fontSize:'0.9rem', color:"rgba(0, 73, 105, 1)", fontWeight:"600"}}>Railways</div>
                 </div>
                 <div className="points-ind">
                     <div className="point-logo"><MdArrowForwardIos/></div>
-                    <div className="point-text" style={{fontSize:'0.9rem', color:"rgba(0, 73, 105, 1)", fontWeight:"600"}}> Irrigation systems</div>
+                    <div className="point-text" style={{fontSize:'0.9rem', color:"rgba(0, 73, 105, 1)", fontWeight:"600"}}> Tunnels</div>
                 </div>
                 <div className="points-ind">
                     <div className="point-logo"><MdArrowForwardIos/></div>
-                    <div className="point-text" style={{fontSize:'0.9rem', color:"rgba(0, 73, 105, 1)", fontWeight:"600"}}>Greenhouses</div>
+                    <div className="point-text" style={{fontSize:'0.9rem', color:"rgba(0, 73, 105, 1)", fontWeight:"600"}}>Construction sites</div>
                 </div>
               </div>
             </div>

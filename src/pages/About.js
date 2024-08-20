@@ -161,9 +161,9 @@ const About = () => {
         </h2>
         <br />
         <br />
-        <div className="each-process">
-          <img className="each-process-img" src={p1} alt="" />
-          <div>
+        <div className="each-process row" style={{margin:'0'}}>
+          <img className="each-process-img col-lg-6 col-md-6" src={p1} alt="" />
+          <div className="col-lg-6 col-md-6" style={{paddingLeft:"60px"}}>
             <div className="d-flex align-items-center" style={{ gap: "30px" }}>
               <div
                 className="about-section-line"
@@ -191,7 +191,7 @@ const About = () => {
             </h2>
             <p
               style={{
-                width: "50vw",
+                width: "40vw",
                 fontSize: "0.9rem",
               }}
             >
@@ -212,8 +212,8 @@ const About = () => {
         </div>
         <br />
         <br />
-        <div className="each-process each-process-mid">
-          <div>
+        <div className="each-process each-process-mid row" style={{margin:'0'}}>
+          <div className="col-lg-6 col-md-6">
             <div className="d-flex align-items-center" style={{ gap: "30px" }}>
               <div
                 className="about-section-line"
@@ -241,7 +241,7 @@ const About = () => {
             </h2>
             <p
               style={{
-                width: "50vw",
+                width: "40vw",
                 fontSize: "0.9rem",
               }}
             >
@@ -259,13 +259,13 @@ const About = () => {
               <div>DISCOVER</div>
             </div>
           </div>
-          <img className="each-process-img" src={p2} alt="" />
+          <img className="each-process-img col-lg-6 col-md-6" src={p2} alt="" />
         </div>
         <br />
         <br />
-        <div className="each-process">
-          <img className="each-process-img" src={p3} alt="" />
-          <div>
+        <div className="each-process row" style={{margin:'0'}}>
+          <img className="each-process-img col-lg-6 col-md-6" src={p3} alt="" />
+          <div className="col-lg-6 col-md-6" style={{paddingLeft:"40px"}}>
             <div className="d-flex align-items-center" style={{ gap: "30px" }}>
               <div
                 className="about-section-line"
@@ -293,7 +293,7 @@ const About = () => {
             </h2>
             <p
               style={{
-                width: "50vw",
+                width: "40vw",
                 fontSize: "0.9rem",
               }}
             >

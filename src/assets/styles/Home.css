@@ -1,0 +1,162 @@
+@font-face {
+  font-family: euclid;
+  font-weight: bold;
+  src: url(../fonts/EuclidCircularA-Regular.ttf);
+}
+@font-face {
+  font-family: euclid-bold;
+  font-weight: bold;
+  src: url(../fonts/EuclidCircularA-Medium.ttf);
+}
+@font-face {
+  font-family: euclid-boldest;
+  font-weight: bold;
+  src: url(../fonts/EuclidCircularA-Bold.ttf);
+}
+.vid-home {
+}
+.home-caro-h {
+  position: absolute;
+  top: 20%;
+  margin: auto;
+  color: white;
+  font-family: euclid;
+  text-align: center;
+  width: 100%;
+}
+@media(max-width:750px){
+    .home-caro-h{
+        transform: scale(0.8);
+        top: 10%;
+    }
+}
+@media(max-width:575px){
+    .home-caro-h{
+        transform: scale(0.8);
+        top: 5%;
+    }
+}
+@media(max-width:500px){
+    .home-caro-h{
+        transform: scale(0.8);
+        top: -5%;
+    }
+}
+@media(max-width:450px){
+    .home-caro-h{
+        transform: scale(0.7);
+        top: -25%;
+    }
+}
+@media(max-width:385px){
+    .home-caro-h{
+        transform: scale(0.55);
+        top: -50%;
+    }
+}
+@media(max-width:335px){
+    .home-caro-h{
+        transform: scale(0.55);
+        top: -65%;
+    }
+}
+/* .caro-home {
+  background: url("../images/home.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 90vh;
+  width: 100%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: euclid;
+} */
+/* @media (max-width: 845px) {
+  .caro-home {
+    height: auto;
+    padding: 40px 0;
+  }
+  .home-caro-h {
+    margin: 0px 60px;
+  }
+} */
+.h-home {
+  font-family: euclid-bold;
+}
+.md-arr {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border: 1px solid white;
+  color: white;
+  cursor: pointer;
+}
+.back-text {
+  background-image: url("../images/home1.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+@media (max-width: 992px) {
+  .back-text {
+    height: 70vh;
+  }
+}
+.md-arr-1 {
+  height: 25px;
+  width: 25px;
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+.back-text-side {
+  padding: 60px;
+  font-family: euclid;
+}
+
+.abt-us-home {
+  background-color: rgba(30, 30, 45, 1);
+  color: white;
+  font-family: euclid;
+  height: 470px;
+  /* margin-bottom: 200px; */
+  padding: 60px;
+}
+#card,
+#card2,
+#card3 {
+  border: 1px solid rgb(205, 205, 205);
+}
+.card-tit-h,
+.lm {
+  font-family: euclid-bold;
+}
+.hc {
+  height: 70px;
+  width: 70px;
+  background-color: rgba(0, 73, 105, 1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contact-us-home {
+  background-color: rgba(240, 241, 242, 1);
+  padding: 60px;
+  padding-top: 230px;
+}

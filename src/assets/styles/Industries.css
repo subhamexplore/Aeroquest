@@ -5,6 +5,13 @@
   padding: 20px 30px 10px 30px;
   height: auto;
   background-color: white;
+  border: 10px solid rgba(240, 241, 242, 1);
+}
+@media(max-width:500px){
+  .cards-three-2 {
+    padding: 20px 30px 10px 30px;
+    border: 0px solid rgba(240, 241, 242, 1);
+  }
 }
 .point-logo {
   height: 30px;
