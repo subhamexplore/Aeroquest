@@ -14,9 +14,9 @@ const Footer = () => {
             style={{}}
           >
             <img className="mb-4" src={logo} alt="" height={70} />
-            <div>742 Evergreen Terrace, Springfield, IL 62704, USA</div>
+            <div>200 N Phillips Ave, STE L 104, Sioux Falls, SD 57104</div>
             <div>+1 555 123 4567 +1 555 987 6543</div>
-            <div>contact@aeroquest.com</div>
+            <div>info@aeroquestuav.com</div>
           </div>
           <div
             className="row col-lg-8"

@@ -18,7 +18,8 @@ import hc3 from "../assets/images/hc3.png";
 import h4 from "../assets/images/h4.png";
 import hc4 from "../assets/images/hc4.png";
 import c5 from "../assets/videos/home.mp4";
-import {useNavigate} from 'react-router-dom'
+import { useNavigate } from "react-router-dom";
+import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
 const Home = () => {
   const nav = useNavigate();
@@ -65,8 +66,8 @@ const Home = () => {
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 2,
-    nextArrow: <Arrow />,
-    prevArrow: <Arrow />,
+    nextArrow: <Arrow2 />,
+    prevArrow: <Arrow2 />,
     initialSlide: 0,
     responsive: [
       {
@@ -91,31 +92,107 @@ const Home = () => {
   };
   function Arrow(props) {
     const { className, style, onClick } = props;
+    const isNext = className.includes("slick-next");
+    const isPrev = className.includes("slick-prev");
     return (
       <div
         className={className}
         style={{
           ...style,
           display: "block",
-          color: "grey",
-          background: "grey",
+          display: "flex", // Use flexbox for centering
+          alignItems: "center", // Center vertically
+          justifyContent: "center",
+          color: "rgba(0, 73, 105, 1)",
+          background: isNext ? "transparent" : "transparent", // Different colors for next and prev
           borderRadius: "50%",
-          // transform: "scale(1.2)",
-          // padding:"20px",
-          // display:'flex',
-          // justifyContent:'center',
-          // alignItems:'center',
-          // marginTop:"-20px"
+          fontSize: "20px",
+          textAlign: "center",
+          width: "40px",
+          height: "40px",
+          zIndex: 1,
+          border: "1px solid rgba(110, 110, 110, 1)",
+          ...(isNext ? { right: "-25px" } : { left: "-25px" }),
         }}
         onClick={onClick}
-      />
+      >
+        {isNext ? (
+          <FaChevronRight
+            style={{
+              marginLeft: "-15px",
+              position: "relative",
+              zIndex: "10000",
+            }}
+          />
+        ) : (
+          <FaChevronLeft
+            style={{
+              marginLeft: "-20px",
+              position: "relative",
+              zIndex: "10000",
+            }}
+          />
+        )}
+      </div>
+    );
+  }
+  function Arrow2(props) {
+    const { className, style, onClick } = props;
+    const isNext2 = className.includes("slick-next");
+    const isPrev = className.includes("slick-prev");
+    return (
+      <div
+        className={className}
+        style={{
+          ...style,
+          display: "block",
+          display: "flex", // Use flexbox for centering
+          alignItems: "center", // Center vertically
+          justifyContent: "center",
+          color: "rgba(0, 73, 105, 1)",
+          background: isNext2 ? "white" : "white", // Different colors for next and prev
+          borderRadius: "50%",
+          fontSize: "20px",
+          textAlign: "center",
+          width: "40px",
+          height: "40px",
+          zIndex: 1,
+          border: "1px solid rgba(0, 73, 105, 1)",
+          ...(isNext2 ? { right: "-25px" } : { left: "-25px" }),
+        }}
+        onClick={onClick}
+      >
+        {isNext2 ? (
+          <FaChevronRight
+            style={{
+              marginLeft: "-15px",
+              position: "relative",
+              zIndex: "10000",
+            }}
+          />
+        ) : (
+          <FaChevronLeft
+            style={{
+              marginLeft: "-20px",
+              position: "relative",
+              zIndex: "10000",
+            }}
+          />
+        )}
+      </div>
     );
   }
   return (
     <div>
       <div className="caro-home">
-        <div style={{position:"relative"}}>
-          <video className=" d-block w-100" autoPlay muted loop>
+        <div style={{ position: "relative" }}>
+          <video
+            className=" d-block w-100"
+            autoPlay
+            muted
+            loop
+            style={{ filter: "brightness(0.6)" }}
+          >
             <source src={c5} type="video/mp4" />
           </video>
           <div className="home-caro-h">
@@ -123,14 +200,14 @@ const Home = () => {
             <br />
             <h1 className="h-home">Trusted Drone Inspection</h1>
             <h1 className="h-home">Services Across Industries</h1>
-            <div>
+            {/* <div>
               At Aero Quest, our experienced pilots offer precise and efficient
               drone services for agriculture, energy,
             </div>
             <div>
               telecom, infrastructure, and beyond. Reach out today to schedule
               your aerial survey.
-            </div>
+            </div> */}
             <br />
             <br />
             <br />
@@ -138,11 +215,16 @@ const Home = () => {
             <br />
             <br />
             <br />
-            <br /><br /><br /><br /><br /><br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
             <div
               className="d-flex align-items-center justify-content-center"
-              style={{ gap: "10px", cursor:"pointer" }}
-              onClick={()=>nav('/about')}
+              style={{ gap: "10px", cursor: "pointer" }}
+              onClick={() => nav("/about")}
             >
               <div className="md-arr">
                 <MdArrowForwardIos />
@@ -327,9 +409,9 @@ const Home = () => {
                       color: "black",
                       marginTop: "-10px",
                       marginBottom: "4px",
-                      cursor: "pointer"
+                      cursor: "pointer",
                     }}
-                    onClick={()=>nav('/industries')}
+                    onClick={() => nav("/industries")}
                   >
                     Learn More
                   </p>
@@ -388,9 +470,9 @@ const Home = () => {
                       color: "black",
                       marginTop: "-10px",
                       marginBottom: "4px",
-                      cursor: "pointer"
+                      cursor: "pointer",
                     }}
-                    onClick={()=>nav('/industries')}
+                    onClick={() => nav("/industries")}
                   >
                     Learn More
                   </p>
@@ -449,9 +531,9 @@ const Home = () => {
                       color: "black",
                       marginTop: "-10px",
                       marginBottom: "4px",
-                      cursor: "pointer"
+                      cursor: "pointer",
                     }}
-                    onClick={()=>nav('/industries')}
+                    onClick={() => nav("/industries")}
                   >
                     Learn More
                   </p>
@@ -500,7 +582,9 @@ const Home = () => {
                     className="card-text"
                     style={{ color: "rgba(0, 0, 0, 0.65)", lineHeight: "25px" }}
                   >
-                    Surveying bridges, roads, water towers, and other infrastructure using drones involves capturing high-resolution images and 3D models to assess structura...
+                    Surveying bridges, roads, water towers, and other
+                    infrastructure using drones involves capturing
+                    high-resolution images and 3D models to assess structura...
                   </p>
                   <p
                     className="lm"
@@ -508,9 +592,9 @@ const Home = () => {
                       color: "black",
                       marginTop: "-10px",
                       marginBottom: "4px",
-                      cursor: "pointer"
+                      cursor: "pointer",
                     }}
-                    onClick={()=>nav('/industries')}
+                    onClick={() => nav("/industries")}
                   >
                     Learn More
                   </p>
