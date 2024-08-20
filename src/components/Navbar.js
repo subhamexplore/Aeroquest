@@ -54,7 +54,7 @@ const Navbar = () => {
               <button
                 className="nav-button btn"
                 type="submit"
-                onClick={() => nav("/")}
+                onClick={() => nav("/contact")}
               >
                 GET IN TOUCH
               </button>

@@ -1,8 +1,10 @@
 import React from "react";
 import "../assets/styles/Footer.css";
 import logo from "../assets/images/logo.png";
+import {useNavigate} from 'react-router-dom';
 
 const Footer = () => {
+  const nav = useNavigate();
   return (
     <div>
       <div className="footer-section">
@@ -32,10 +34,10 @@ const Footer = () => {
             <div className="col-lg-3 col-md-3">
               <h5 className="mb-4 footer-h">Main Menu</h5>
               <ul style={{listStyle:"none", margin:"0", padding:"0", lineHeight:"40px"}}>
-                <li>Home</li>
-                <li>About</li>
-                <li>Industries</li>
-                <li>Contact</li>
+                <li style={{cursor:"pointer"}} onClick={()=>nav('/')}>Home</li>
+                <li style={{cursor:"pointer"}} onClick={()=>nav('/about')}>About</li>
+                <li style={{cursor:"pointer"}} onClick={()=>nav('/industries')}>Industries</li>
+                <li style={{cursor:"pointer"}} onClick={()=>nav('/contact')}>Contact</li>
               </ul>
             </div>
             <div className="col-lg-3 col-md-3">
@@ -62,10 +64,10 @@ const Footer = () => {
         <div className="footer-bottom row" style={{margin:"0"}}>
           <div className="col-lg-6 footer-bottom-copy">@ 2024 Aeroquest. All rights reserved</div>
           <div className="col-lg-6 row footer-bottom-nav" style={{margin:"0"}}>
-            <div className="col-lg-3 col-md-3">Home</div>
-            <div className="col-lg-3 col-md-3">About</div>
-            <div className="col-lg-3 col-md-3">Industries</div>
-            <div className="col-lg-3 col-md-3">Contact</div>
+            <div className="col-lg-3 col-md-3" style={{cursor:"pointer"}} onClick={()=>nav('/')}>Home</div>
+            <div className="col-lg-3 col-md-3" style={{cursor:"pointer"}} onClick={()=>nav('/about')}>About</div>
+            <div className="col-lg-3 col-md-3" style={{cursor:"pointer"}} onClick={()=>nav('/industries')}>Industries</div>
+            <div className="col-lg-3 col-md-3" style={{cursor:"pointer"}} onClick={()=>nav('/contact')}>Contact</div>
           </div>
         </div>
       </div>

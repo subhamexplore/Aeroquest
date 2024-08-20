@@ -15,9 +15,13 @@ import h2 from "../assets/images/h2.png";
 import hc2 from "../assets/images/hc2.png";
 import h3 from "../assets/images/h3.png";
 import hc3 from "../assets/images/hc3.png";
+import h4 from "../assets/images/h4.png";
+import hc4 from "../assets/images/hc4.png";
 import c5 from "../assets/videos/home.mp4";
+import {useNavigate} from 'react-router-dom'
 
 const Home = () => {
+  const nav = useNavigate();
   const carosettings = {
     dots: true,
     infinite: true,
@@ -111,7 +115,7 @@ const Home = () => {
     <div>
       <div className="caro-home">
         <div style={{position:"relative"}}>
-          <video className=" d-block w-100" autoPlay muted>
+          <video className=" d-block w-100" autoPlay muted loop>
             <source src={c5} type="video/mp4" />
           </video>
           <div className="home-caro-h">
@@ -137,7 +141,8 @@ const Home = () => {
             <br /><br /><br /><br /><br /><br />
             <div
               className="d-flex align-items-center justify-content-center"
-              style={{ gap: "10px" }}
+              style={{ gap: "10px", cursor:"pointer" }}
+              onClick={()=>nav('/about')}
             >
               <div className="md-arr">
                 <MdArrowForwardIos />
@@ -278,7 +283,7 @@ const Home = () => {
                   width: "19rem",
                   borderRadius: "0",
                   // border: "none",
-                  height: "400px",
+                  height: "430px",
                 }}
               >
                 <img
@@ -322,7 +327,9 @@ const Home = () => {
                       color: "black",
                       marginTop: "-10px",
                       marginBottom: "4px",
+                      cursor: "pointer"
                     }}
+                    onClick={()=>nav('/industries')}
                   >
                     Learn More
                   </p>
@@ -337,7 +344,7 @@ const Home = () => {
                   width: "19rem",
                   borderRadius: "0",
                   // border: "none",
-                  height: "400px",
+                  height: "430px",
                 }}
               >
                 <img
@@ -381,7 +388,9 @@ const Home = () => {
                       color: "black",
                       marginTop: "-10px",
                       marginBottom: "4px",
+                      cursor: "pointer"
                     }}
+                    onClick={()=>nav('/industries')}
                   >
                     Learn More
                   </p>
@@ -396,7 +405,7 @@ const Home = () => {
                   width: "19rem",
                   borderRadius: "0",
                   // border: "none",
-                  height: "400px",
+                  height: "430px",
                 }}
               >
                 <img
@@ -440,16 +449,74 @@ const Home = () => {
                       color: "black",
                       marginTop: "-10px",
                       marginBottom: "4px",
+                      cursor: "pointer"
                     }}
+                    onClick={()=>nav('/industries')}
                   >
                     Learn More
                   </p>
                 </div>
               </div>
             </div>
-            {/* <div className="d-flex justify-content-center">
-              <img src={caro2} height={70} className="caro-cards" alt="" />
-            </div> */}
+            <div className="d-flex justify-content-center">
+              <div
+                className="card"
+                id="card3"
+                style={{
+                  width: "19rem",
+                  borderRadius: "0",
+                  // border: "none",
+                  height: "430px",
+                }}
+              >
+                <img
+                  src={h4}
+                  className="card-img-top"
+                  alt="..."
+                  height={180}
+                  style={{ border: "none" }}
+                />
+                <div
+                  className="hc"
+                  style={{ margin: "auto", position: "relative", top: "-35px" }}
+                >
+                  <img src={hc4} height={40} alt="" />
+                </div>
+                <div
+                  className="card-body"
+                  style={{
+                    fontSize: "0.75rem",
+                    textAlign: "center",
+                    marginTop: "-30px",
+                  }}
+                >
+                  <p
+                    className="card-title card-tit-h"
+                    style={{ color: "rgba(0, 73, 105, 1)", fontSize: "0.9rem" }}
+                  >
+                    Infrastructure Drone Inspections
+                  </p>
+                  <p
+                    className="card-text"
+                    style={{ color: "rgba(0, 0, 0, 0.65)", lineHeight: "25px" }}
+                  >
+                    Surveying bridges, roads, water towers, and other infrastructure using drones involves capturing high-resolution images and 3D models to assess structura...
+                  </p>
+                  <p
+                    className="lm"
+                    style={{
+                      color: "black",
+                      marginTop: "-10px",
+                      marginBottom: "4px",
+                      cursor: "pointer"
+                    }}
+                    onClick={()=>nav('/industries')}
+                  >
+                    Learn More
+                  </p>
+                </div>
+              </div>
+            </div>
           </Slider>
           <br />
           <br />
