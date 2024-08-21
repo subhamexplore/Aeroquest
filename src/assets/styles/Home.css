@@ -93,7 +93,12 @@
 } */
 .h-home {
   font-family: euclid-bold;
-  font-size: 3rem;
+  font-size: 4rem;
+}
+@media(max-width:1192px){
+  .h-home{
+    font-size: 3rem;
+  }
 }
 @media(max-width:725px){
   .h-home{

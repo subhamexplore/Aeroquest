@@ -1,8 +1,38 @@
 import React from "react";
 import "../assets/styles/Contact.css";
 import contact from "../assets/images/contact.png";
+import { useState } from "react";
 
 const Contact = () => {
+  const [formData, setFormData] = useState({
+    fname: "",
+    lname: "",
+    email: "",
+    message: "",
+  });
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value,
+    });
+  };
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      const response = await fetch("https://aeroquest-backend.onrender.com/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+      window.location.reload();
+    } catch (error) {
+      console.log(error);
+      alert("Failed! Try again.");
+    }
+  };
+  
   return (
     <div>
       <div className="caro-bg" style={{ backgroundImage: `url(${contact})` }}>
@@ -69,14 +99,29 @@ const Contact = () => {
           or equipment.
         </p>
         <br />
-        <form id="form" action="">
+        <form id="form" action="" onSubmit={handleSubmit}>
           <div className="row" style={{ margin: "0" }}>
             <div className="col-lg-4 col-md-4 form-left">
-              <input type="text" placeholder="First Name *" />
+              <input
+                name="fname"
+                type="text"
+                placeholder="First Name *"
+                onChange={handleChange}
+              />
               <br />
-              <input type="text" placeholder="Last Name *" />
+              <input
+                name="lname"
+                type="text"
+                placeholder="Last Name *"
+                onChange={handleChange}
+              />
               <br />
-              <input type="email" placeholder="Email *" />
+              <input
+                name="email"
+                type="email"
+                placeholder="Email *"
+                onChange={handleChange}
+              />
               <br />
               {/* <div style={{position:'relative'}}> */}
               {/* <div style={{color: "rgba(0, 73, 105, 0.7)", fontSize:"0.75rem", position:"absolute", top:"8px", left:"8px"}}>Industry</div> */}
@@ -90,14 +135,19 @@ const Contact = () => {
               {/* </div> */}
             </div>
             <div className="col-lg-8 col-md-8 form-right">
-              <textarea name="" id="" placeholder="Message"></textarea>
+              <textarea
+                name="message"
+                id=""
+                placeholder="Message"
+                onChange={handleChange}
+              ></textarea>
             </div>
           </div>
           <div className="row" style={{ margin: "0" }}>
             <button
               className="nav-button btn col-lg-4 col-md-4 nav-contact-btn"
               type="submit"
-              style={{padding:"20px", transform:'scale(0.95)'}}
+              style={{ padding: "20px", transform: "scale(0.95)" }}
             >
               SEND MESSAGE
             </button>
