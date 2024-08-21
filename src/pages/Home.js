@@ -55,6 +55,7 @@ const Home = () => {
           body: JSON.stringify(formData),
         }
       );
+      window.location.reload();
       setShowAlert(true);
     } catch (error) {
       console.log(error);

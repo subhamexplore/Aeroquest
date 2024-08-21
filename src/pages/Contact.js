@@ -36,7 +36,8 @@ const Contact = () => {
           body: JSON.stringify(formData),
         }
       );
-      setShowAlert(true)
+      window.location.reload();
+      setShowAlert(true);
     } catch (error) {
       console.log(error);
       alert("Failed! Try again.");
