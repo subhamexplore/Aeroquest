@@ -14,7 +14,7 @@ const About = () => {
       <div className="caro-bg">
         <div className="caro-box">
           <div>
-            <h5 className="caro-box-para">Aeroquest</h5>
+            {/* <h5 className="caro-box-para">Aeroquest</h5> */}
             <h1 className="caro-box-head" style={{ marginBottom: "40px" }}>
               About Us
             </h1>

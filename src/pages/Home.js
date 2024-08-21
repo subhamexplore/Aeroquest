@@ -196,10 +196,10 @@ const Home = () => {
             <source src={c5} type="video/mp4" />
           </video>
           <div className="home-caro-h">
-            <div style={{ textTransform: "uppercase" }}>Aeroquest</div>
+            {/* <div style={{ textTransform: "uppercase" }}>Aeroquest</div> */}
             <br />
-            <h1 className="h-home">Trusted Drone Inspection</h1>
-            <h1 className="h-home">Services Across Industries</h1>
+            <h2 className="h-home">Trusted Drone Inspection</h2>
+            <h2 className="h-home">Services Across Industries</h2>
             {/* <div>
               At Aero Quest, our experienced pilots offer precise and efficient
               drone services for agriculture, energy,

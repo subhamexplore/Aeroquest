@@ -8,7 +8,7 @@ const Contact = () => {
       <div className="caro-bg" style={{ backgroundImage: `url(${contact})` }}>
         <div className="caro-box">
           <div>
-            <h5 className="caro-box-para">Aeroquest</h5>
+            {/* <h5 className="caro-box-para">Aeroquest</h5> */}
             <h1 className="caro-box-head" style={{ marginBottom: "40px" }}>
               Contact Us
             </h1>
