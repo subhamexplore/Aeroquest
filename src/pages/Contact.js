@@ -1,9 +1,16 @@
 import React from "react";
 import "../assets/styles/Contact.css";
 import contact from "../assets/images/contact.png";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const Contact = () => {
+  const [showAlert, setShowAlert] = useState(false);
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setShowAlert(false);
+    }, 3000);
+    return () => clearTimeout(timer);
+  }, []);
   const [formData, setFormData] = useState({
     fname: "",
     lname: "",
@@ -19,22 +26,39 @@ const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch("https://aeroquest-backend.onrender.com/api/contact", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(formData),
-      });
-      window.location.reload();
+      const response = await fetch(
+        "https://aeroquest-backend.onrender.com/api/contact",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(formData),
+        }
+      );
+      setShowAlert(true)
     } catch (error) {
       console.log(error);
       alert("Failed! Try again.");
     }
   };
-  
+
   return (
     <div>
+      {showAlert && (
+        <div
+          class="alert alert-success"
+          role="alert"
+          style={{
+            position: "absolute",
+            top: "100px",
+            width: "100%",
+            zIndex: "10000",
+          }}
+        >
+          Thanks for contacting us! We will be in touch with you shortly.
+        </div>
+      )}
       <div className="caro-bg" style={{ backgroundImage: `url(${contact})` }}>
         <div className="caro-box">
           <div>
