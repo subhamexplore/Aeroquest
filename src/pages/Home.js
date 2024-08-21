@@ -23,10 +23,11 @@ import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import { useState, useEffect } from "react";
 
 const Home = () => {
-  const [showAlert, setShowAlert] = useState(false);
+  const [showAlert, setShowAlert] = useState(true);
   useEffect(() => {
     const timer = setTimeout(() => {
       setShowAlert(false);
+      window.location.reload();
     }, 3000);
     return () => clearTimeout(timer);
   }, []);
@@ -55,7 +56,6 @@ const Home = () => {
           body: JSON.stringify(formData),
         }
       );
-      window.location.reload();
       setShowAlert(true);
     } catch (error) {
       console.log(error);
@@ -224,7 +224,7 @@ const Home = () => {
   }
   return (
     <div>
-      {showAlert && <div class="alert alert-success" role="alert" style={{position:'absolute', top:'100px', width:"100%", zIndex:"10000"}}>
+      {showAlert && <div class="alert alert-success" role="alert" style={{position:'fixed', top:'10px', width:"100%", zIndex:"10000"}}>
         Thanks for contacting us! We will be in touch with you shortly.
       </div>}
       <div className="caro-home">

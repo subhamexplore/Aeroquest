@@ -8,6 +8,7 @@ const Contact = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setShowAlert(false);
+      window.location.reload();
     }, 3000);
     return () => clearTimeout(timer);
   }, []);
@@ -36,7 +37,6 @@ const Contact = () => {
           body: JSON.stringify(formData),
         }
       );
-      window.location.reload();
       setShowAlert(true);
     } catch (error) {
       console.log(error);
@@ -51,8 +51,8 @@ const Contact = () => {
           class="alert alert-success"
           role="alert"
           style={{
-            position: "absolute",
-            top: "100px",
+            position: "fixed",
+            top: "10px",
             width: "100%",
             zIndex: "10000",
           }}
