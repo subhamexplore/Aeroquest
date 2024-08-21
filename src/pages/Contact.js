@@ -11,7 +11,7 @@ const Contact = () => {
       window.location.reload();
     }, 3000);
     return () => clearTimeout(timer);
-  }, []);
+  }, [showAlert]);
   const [formData, setFormData] = useState({
     fname: "",
     lname: "",

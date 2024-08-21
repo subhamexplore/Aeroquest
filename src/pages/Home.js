@@ -23,14 +23,14 @@ import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import { useState, useEffect } from "react";
 
 const Home = () => {
-  const [showAlert, setShowAlert] = useState(true);
+  const [showAlert, setShowAlert] = useState(false);
   useEffect(() => {
     const timer = setTimeout(() => {
       setShowAlert(false);
       window.location.reload();
     }, 3000);
     return () => clearTimeout(timer);
-  }, []);
+  }, [showAlert]);
   const [formData, setFormData] = useState({
     fname: "",
     lname: "",
