@@ -208,21 +208,8 @@ const Home = () => {
               telecom, infrastructure, and beyond. Reach out today to schedule
               your aerial survey.
             </div> */}
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
             <div
-              className="d-flex align-items-center justify-content-center"
+              className="d-flex align-items-center justify-content-center dis-h"
               style={{ gap: "10px", cursor: "pointer" }}
               onClick={() => nav("/about")}
             >

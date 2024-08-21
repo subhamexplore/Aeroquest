@@ -17,47 +17,55 @@
 }
 .home-caro-h {
   position: absolute;
-  top: 20%;
+  top: 35%;
   margin: auto;
   color: white;
   font-family: euclid;
   text-align: center;
   width: 100%;
 }
+.dis-h{
+  margin-top: 15vw;
+}
+@media(max-width:960px){
+  .dis-h{
+    margin-top: 5vw;
+  }
+}
 @media(max-width:750px){
     .home-caro-h{
         transform: scale(0.8);
-        top: 10%;
+        top: 15%;
     }
 }
 @media(max-width:575px){
     .home-caro-h{
         transform: scale(0.8);
-        top: 5%;
+        top: 20%;
     }
 }
 @media(max-width:500px){
     .home-caro-h{
         transform: scale(0.8);
-        top: -5%;
+        top: 20%;
     }
 }
 @media(max-width:450px){
     .home-caro-h{
         transform: scale(0.7);
-        top: -25%;
+        top: 20%;
     }
 }
 @media(max-width:385px){
     .home-caro-h{
         transform: scale(0.55);
-        top: -50%;
+        top: 20%;
     }
 }
 @media(max-width:335px){
     .home-caro-h{
         transform: scale(0.55);
-        top: -65%;
+        top: 15%;
     }
 }
 /* .caro-home {

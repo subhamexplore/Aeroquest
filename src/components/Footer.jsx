@@ -83,7 +83,7 @@ const Footer = () => {
           <div className="col-lg-6 footer-bottom-copy">
             @ 2024 Aeroquest. All rights reserved
           </div>
-          <div
+          {/* <div
             className="col-lg-6 row footer-bottom-nav"
             style={{ margin: "0" }}
           >
@@ -115,7 +115,7 @@ const Footer = () => {
             >
               Contact
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
