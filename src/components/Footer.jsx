@@ -11,7 +11,8 @@ const Footer = () => {
         <div className="footer-top row" style={{ margin: "0" }}>
           <div className="col-lg-4 mb-5" style={{}}>
             <img className="mb-4" src={logo} alt="" height={70} />
-            <div>200 N Phillips Ave, STE L 104, Sioux Falls, SD 57104</div>
+            <div>200 N Phillips Ave, STE L 104,</div>
+            <div>Sioux Falls, SD 57104</div>
             <div>+1 555 123 4567 +1 555 987 6543</div>
             <div>info@aeroquestuav.com</div>
           </div>

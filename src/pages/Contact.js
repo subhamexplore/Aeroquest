@@ -80,13 +80,13 @@ const Contact = () => {
               <br />
               {/* <div style={{position:'relative'}}> */}
               {/* <div style={{color: "rgba(0, 73, 105, 0.7)", fontSize:"0.75rem", position:"absolute", top:"8px", left:"8px"}}>Industry</div> */}
-              <select name="" id="" value="">
+              {/* <select name="" id="" value="">
                 <option value="" disabled>
                   Please Select
                 </option>
                 <option value="">Option 1</option>
                 <option value="">Option 2</option>
-              </select>
+              </select> */}
               {/* </div> */}
             </div>
             <div className="col-lg-8 col-md-8 form-right">

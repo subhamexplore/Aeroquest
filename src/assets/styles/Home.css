@@ -93,6 +93,17 @@
 } */
 .h-home {
   font-family: euclid-bold;
+  font-size: 3rem;
+}
+@media(max-width:725px){
+  .h-home{
+    font-size: 2.2rem;
+  }
+}
+@media(max-width:435px){
+  .h-home{
+    font-size: 1.5rem;
+  }
 }
 .md-arr {
   display: flex;

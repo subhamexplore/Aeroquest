@@ -198,8 +198,8 @@ const Home = () => {
           <div className="home-caro-h">
             {/* <div style={{ textTransform: "uppercase" }}>Aeroquest</div> */}
             <br />
-            <h2 className="h-home">Trusted Drone Inspection</h2>
-            <h2 className="h-home">Services Across Industries</h2>
+            <h1 className="h-home">Trusted Drone Inspection</h1>
+            <h1 className="h-home">Services Across Industries</h1>
             {/* <div>
               At Aero Quest, our experienced pilots offer precise and efficient
               drone services for agriculture, energy,
@@ -629,13 +629,13 @@ const Home = () => {
               <br />
               {/* <div style={{position:'relative'}}> */}
               {/* <div style={{color: "rgba(0, 73, 105, 0.7)", fontSize:"0.75rem", position:"absolute", top:"8px", left:"8px"}}>Industry</div> */}
-              <select name="" id="" value="">
+              {/* <select name="" id="" value="">
                 <option value="" disabled>
                   Please Select
                 </option>
                 <option value="">Option 1</option>
                 <option value="">Option 2</option>
-              </select>
+              </select> */}
               {/* </div> */}
             </div>
             <div className="col-lg-8 col-md-8 form-right">
