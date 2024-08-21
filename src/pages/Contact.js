@@ -5,13 +5,13 @@ import { useState, useEffect } from "react";
 
 const Contact = () => {
   const [showAlert, setShowAlert] = useState(false);
-  useEffect(() => {
+  const handleAlert = () => {
     const timer = setTimeout(() => {
       setShowAlert(false);
       window.location.reload();
     }, 3000);
     return () => clearTimeout(timer);
-  }, [showAlert]);
+  };
   const [formData, setFormData] = useState({
     fname: "",
     lname: "",
@@ -38,6 +38,7 @@ const Contact = () => {
         }
       );
       setShowAlert(true);
+      handleAlert();
     } catch (error) {
       console.log(error);
       alert("Failed! Try again.");
