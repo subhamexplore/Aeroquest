@@ -3,9 +3,9 @@ import "../assets/styles/About.css";
 import a1 from "../assets/images/a1.png";
 import a2 from "../assets/images/a2.png";
 import a3 from "../assets/images/a3.png";
-import p1 from "../assets/images/p1.png";
-import p2 from "../assets/images/p2.png";
-import p3 from "../assets/images/p3.png";
+import p1 from "../assets/images/p6.jpg";
+import p2 from "../assets/images/p4.webp";
+import p3 from "../assets/images/p5.webp";
 import { MdArrowForwardIos } from "react-icons/md";
 
 const About = () => {
